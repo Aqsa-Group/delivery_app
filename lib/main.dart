@@ -1,9 +1,20 @@
+import 'package:delivery_app/pages/introduction_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp( MaterialApp(
-    home: Myapp(),
-  ));
+
+      builder: (context, child) {
+    return Directionality(
+      textDirection: TextDirection.rtl,
+      child: child!,);},
+      debugShowCheckedModeBanner: false,
+    theme: ThemeData(
+      fontFamily: 'Vazir',
+    ),
+
+    home:SplashScreen(),)
+  );
 }
 
 
