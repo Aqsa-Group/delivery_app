@@ -1,4 +1,4 @@
-import 'package:delivery_app/pages/introduction_screen.dart';
+import 'package:delivery_app/pages/splash/introductionPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

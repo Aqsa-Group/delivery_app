@@ -1,6 +1,7 @@
-import 'package:delivery_app/pages/signUpScreen.dart';
+import 'package:delivery_app/pages/auth/signUpPage.dart';
+
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
+import '../../constants/colors.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -54,10 +55,7 @@ class SplashScreen extends StatelessWidget {
                       "نرم افزار دلیوری اقصی",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize:
-                            size.width *
-                            0.08 *
-                            textScale, // تطبیق با عرض و scale فونت
+                        fontSize: size.width * 0.08 * textScale,
                         fontFamily: 'DimaFantasy',
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -81,7 +79,8 @@ class SplashScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SignUpScreen(),
+                            builder: (context) => const SignUpScreen()
+                            // SignUpScreen(),
                           ),
                         );
                       },
@@ -98,8 +97,7 @@ class SplashScreen extends StatelessWidget {
                         "ورود",
                         style: TextStyle(
                           color: const Color(0xFF1F4E68),
-                          fontSize:
-                              size.width * 0.045 * textScale, // تطبیق فونت
+                          fontSize: size.width * 0.045 * textScale,
                         ),
                       ),
                     ),

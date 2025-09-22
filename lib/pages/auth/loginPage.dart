@@ -1,9 +1,9 @@
 import 'package:delivery_app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:delivery_app/components/signUpComponent/textField.dart';
-import '../components/gradienBotton.dart';
-import '../components/headerSction.dart';
-import 'OtpVerificationPage.dart';
+import '../../components/gradienBotton.dart';
+import '../../components/headerSction.dart';
+
 import 'forgotPasswordPage.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen>
                 SizedBox(height: size.height * 0.05),
 
                 //Header Section that contain logo and welcome text
-                headerSction(size),
+                headerSection(size),
                 SizedBox(height: size.height * 0.02),
                 // Tab bar section
                 TabBar(

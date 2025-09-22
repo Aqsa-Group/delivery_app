@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:delivery_app/components/signUpComponent/textField.dart';
-import '../components/dividerSection.dart';
-import '../components/gradienBotton.dart';
-import '../components/headerSction.dart';
+import '../../components/dividerSection.dart';
+import '../../components/gradienBotton.dart';
+import '../../components/headerSction.dart';
 import 'newPasswordPage.dart';
 import 'package:delivery_app/constants/colors.dart';
 
@@ -29,7 +29,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: size.height * 0.05),
-              headerSction(size),
+              headerSection(size),
               SizedBox(height: size.height * 0.02),
               divider(),
               SizedBox(height: size.height * 0.02),

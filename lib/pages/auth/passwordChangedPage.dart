@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import '../components/dividerSection.dart';
-import '../components/gradienBotton.dart';
-import '../components/headerSction.dart';
+import '../../components/dividerSection.dart';
+import '../../components/gradienBotton.dart';
+import '../../components/headerSction.dart';
 
 import 'package:delivery_app/constants/colors.dart';
+
+import '../MainPages/home/homePage.dart';
+
 
 class PasswordChangedScreen extends StatelessWidget {
   const PasswordChangedScreen({super.key});
@@ -26,7 +29,7 @@ class PasswordChangedScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: size.height * 0.05),
-                headerSction(size),
+                headerSection(size),
                 SizedBox(height: size.height * 0.012),
                 divider(),
                 SizedBox(height: size.height * 0.03),
@@ -58,7 +61,7 @@ class PasswordChangedScreen extends StatelessWidget {
                 GradientButton(
                   text: "تأیید",
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>MainScreen()));
                   },
                   verticalPadding: size.height * 0.018,
                   borderRadius: 12,
