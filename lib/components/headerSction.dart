@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Column headerSction(Size size) {
+Column headerSection(Size size) {
   return Column(
     children: [
       Center(

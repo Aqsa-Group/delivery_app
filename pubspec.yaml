@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   pin_code_fields:
   flutter_svg:
+  persistent_bottom_nav_bar:
+  timelines_plus:
+  timeline_tile: ^2.0.0
 
 
 dev_dependencies:

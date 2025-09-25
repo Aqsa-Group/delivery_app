@@ -1,12 +1,11 @@
 import 'package:delivery_app/constants/colors.dart';
-import 'package:delivery_app/pages/loginPage.dart';
+import 'package:delivery_app/pages/auth/loginPage.dart';
 import 'package:flutter/material.dart';
-import '../components/dividerSection.dart';
-import '../components/gradienBotton.dart';
-import '../components/headerSction.dart';
-import '../components/signUpComponent/textField.dart';
+import '../../components/dividerSection.dart';
+import '../../components/gradienBotton.dart';
+import '../../components/headerSction.dart';
+import '../../components/signUpComponent/textField.dart';
 import 'OtpVerificationPage.dart';
-
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -39,7 +38,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: size.height * 0.05),
-              headerSction(size),
+              headerSection(size),
               SizedBox(height: size.height * 0.02),
               divider(),
               SizedBox(height: size.height * 0.02),

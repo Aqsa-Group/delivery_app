@@ -2,9 +2,9 @@ import 'package:delivery_app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'dart:async';
-import '../components/dividerSection.dart';
-import '../components/gradienBotton.dart';
-import '../components/headerSction.dart';
+import '../../components/dividerSection.dart';
+import '../../components/gradienBotton.dart';
+import '../../components/headerSction.dart';
 
 class OtpVerificationScreen extends StatefulWidget {
   final String phoneNumber;
@@ -78,7 +78,7 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: size.height * 0.05),
-              headerSction(size),
+              headerSection(size),
               SizedBox(height: size.height * 0.02),
               divider(),
               SizedBox(height: size.height * 0.02),
